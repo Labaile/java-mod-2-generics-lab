@@ -7,12 +7,15 @@ public static void main(String args[]){
     Character[] charArray = {'H','E','L','L','O'};
     String[] stringArray = {"B","Y","E"};
 
-    displayArray(intArray);
-    displayArray(doubleArray);
-    displayArray(charArray);
-    displayArray(stringArray);
+    //displayArray(intArray);
+    //displayArray(doubleArray);
+    //displayArray(charArray);
+   //displayArray(stringArray);
 
-
+    System.out.println(getFirst(intArray));
+    System.out.println(getFirst(doubleArray));
+    System.out.println(getFirst(charArray));
+    System.out.println(getFirst(stringArray));
 
 
 
@@ -25,7 +28,18 @@ public static <E> void displayArray(E[] array){
     }
     System.out.println();
 
-}
+}//close displayArray
+
+public static <E> E getFirst(E[] array){
+    return array[0];
+}// close getFirst
+
+
+
+ 
+ 
+
+ 
 
     
 }//close class
